@@ -1,0 +1,138 @@
+.promobanner__game {
+    padding-top: 61px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 44px;
+
+    @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+        /* row-gap: 36px; */
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.promobanner__game img {
+    width: auto;
+    height: auto;
+    /* width: 474px;
+    height: 527px; */
+    align-self: center;
+
+    @media (max-width: 1023px) {
+        width: 335px;
+        /* height: auto; */
+        /* height: 402px; */
+        margin-bottom: 36px;
+    }
+}
+
+.promobanner__game-table {
+    width: 100%;
+    margin-bottom: 49px;
+    margin-top: 62px;
+
+    @media (max-width: 1023px) {
+        margin-bottom: 24px;
+        margin-top: 30px;
+    }
+}
+
+.promobanner__game td {
+    font-family: "Golos";
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-night-rider);
+    vertical-align: middle;
+    /* display: block; */
+
+    @media (max-width: 1023px) {
+        display: inline-block;
+        padding-right: 13px;
+    }
+} 
+
+.promobanner__game tr:first-child td {
+    vertical-align: top;
+}
+
+.promobanner__game tr:last-child td {
+    vertical-align: bottom;
+}
+
+.promobanner__game tr:not(:last-of-type) {
+    border-bottom: 2px solid var(--color-light-grey);
+}
+
+.promobanner__game td:first-child {
+    border-right: 2px solid var(--color-light-grey);
+    font-weight: 400;
+    width: 305px;
+
+    @media (max-width: 1023px) {
+        border-right: none;
+        width: auto;
+        padding-bottom: 12px;
+    }
+}
+
+.promobanner__game td:last-child {
+    font-weight: 600;
+    padding-left: 15px;
+
+    @media (max-width: 1023px) {
+       padding-left: 0;
+    }
+}
+
+.promobanner__game-table tr {
+    height: 56px;
+
+    @media (max-width: 1023px) {
+        /* display: block; */
+        /* height: 75px; */
+        height: auto;
+        padding-top: 16px;
+        padding-bottom: 15px;
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+}
+
+.promobanner__game-table tr:first-child,
+.promobanner__game-table tr:last-child {
+    height: 39px;
+
+    @media (max-width: 1023px) {
+        height: auto;
+    }
+}
+
+.promobanner__game-table tr:nth-child(3) {
+    @media (max-width: 1023px) {
+        height: 22px;
+    }
+}
+
+.promobanner__game-info p:last-child {
+    font-family: "Golos";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-mariner);
+    text-transform: none;
+
+    @media (max-width: 1023px) {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
+
+.promobanner__game-table span {
+    color: var(--color-night-rider);
+    text-decoration: line-through var(--color-red-orange) 2px;
+    display: inline-block;
+    /* padding-left: 6px; */
+    width: 90px;
+}

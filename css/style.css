@@ -1,0 +1,16 @@
+@import "variables.css";
+
+@import "global/reset.css";
+@import "global/utils.css";
+@import "global/fonts.css";
+@import "global/container.css";
+
+@import "blocks/header.css";
+@import "blocks/promo.css";
+@import "blocks/running-line.css";
+@import "blocks/promobanner.css";
+@import "blocks/promobanner-lecture.css";
+@import "blocks/promobanner-game.css";
+/* @import "blocks/stages.css"; */
+@import "blocks/footer.css";
+

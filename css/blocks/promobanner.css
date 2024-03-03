@@ -1,0 +1,33 @@
+.main {
+    width: 100%;
+}
+
+.promobanner {
+    padding: 80px 72px;
+
+    @media (max-width: 1023px) {
+        padding: 52px 19px;
+        padding-right: 20px;
+    }
+}
+
+.promobanner h2,
+.promobanner p {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48.6px;
+    color: var(--color-night-rider);
+    text-transform: uppercase;
+    display: inline;
+
+    @media (max-width: 1023px) {
+        font-size: 28px;
+        line-height: 37.8px;
+    }
+}
+
+.promobanner span {
+    font-weight: 700;
+    color: var(--color-red-orange);
+}

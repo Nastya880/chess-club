@@ -1,0 +1,118 @@
+.stages {
+    padding-top: 33px;
+    padding-left: 72px;
+
+    @media (max-width: 1023px) {
+        padding-left: 20px;
+        padding-top: 19.7px;
+        padding-right: 20px;
+    }
+}
+
+.stages h2 {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 64.8px;
+    color: var(--color-night-rider);
+    text-transform: uppercase;
+    display: inline;
+
+    @media (max-width: 1023px) {
+        display: block;
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+}
+
+.stages p {
+    font-family: "Golos";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-mariner);
+    display: inline;
+
+    @media (max-width: 1023px) {
+        display: block;
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
+
+.stages__list {
+    margin-top: 54px;
+    list-style: none;
+    display: grid;
+    grid-template-areas: "first first second" "third third second" "fourth fifth fifth";
+    gap: 20px;
+    width: 100%;
+}
+
+.stages__item {
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--color-spring-wood);
+    /* min-width: 394px; */
+}
+
+.stages__item p {
+    color: var(--color-night-rider);
+    font-weight: 500;
+}
+
+.stages__item div {
+    font-family: "Golos";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-default-white);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    /* margin-right: 16px; */
+}
+
+.stages__item.is-hidden {
+    display: none;
+}
+
+.stages__item.is-visible {
+    display: block;
+}
+
+.stages__item--first {
+    grid-area: first;
+}
+
+.stages__item--second {
+    grid-area: second;
+}
+
+.stages__item--third {
+    grid-area: third;
+}
+
+.stages__item--fourth {
+    grid-area: fourth;
+    margin-right: 20px;
+}
+
+.stages__item--fifth {
+    grid-area: fifth;
+}
+
+.stages__list-part {
+    display: grid;
+    grid-template-columns: 394px 394px;
+    column-gap: 20px;
+}

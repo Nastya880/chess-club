@@ -1,0 +1,36 @@
+.wrapper-header {
+    background: url("../../img/content/bg-promo-color.png");
+    background-color: var(--color-spring-wood);
+    z-index: -2;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper-header__bg img {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain; /*cover*/
+    width: 100%;
+    max-height: 100%;
+    top: 0;
+
+    @media (max-width: 1023px) {
+        height: 100%;
+    }
+}
+
+
+.header {
+    padding: 26px 72px;
+
+    @media (max-width: 1023px) {
+        padding: 18px 20px;
+    }
+}
+
+.header__logo img {
+    @media (max-width: 1023px) {
+        width: 213px;
+        height: 32px;
+    }
+}

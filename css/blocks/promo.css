@@ -1,0 +1,125 @@
+.promo {
+    padding-top: 33px;
+    padding-left: 72px;
+    overflow-x: hidden;
+
+    @media (max-width: 1023px) {
+        padding-left: 20px;
+        padding-top: 19.7px;
+        padding-right: 20px;
+    }
+}
+
+.promo__info-wrapper {
+    width: 542px;
+    margin-bottom: 130px;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+        margin-bottom: 290px;
+    }
+}
+
+.promo__info-wrapper h2 {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    color: var(--color-night-rider);
+    text-transform: uppercase;
+    z-index: 12;
+    margin-bottom: 24px;
+
+    @media (max-width: 1023px) {
+        font-size: 36px;
+        line-height: 39.6px;
+        margin-bottom: 25px;
+        /* letter-spacing: 1.24px; */
+    }
+}
+
+.promo__info-wrapper span:first-of-type {
+    display: block;
+    text-align: center;
+}
+
+.promo__info-wrapper span:last-of-type {
+    display: block;
+    text-align: right;
+}
+
+.promo__info-wrapper p {
+    font-family: var(--ff-golos);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: var(--color-night-rider);
+    text-align: center;
+
+    @media (max-width: 1023px) {
+        text-align: left;
+    }
+}
+
+.promo__links {
+    margin-top: 39px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    @media (max-width: 1023px) {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 30px;
+    }
+}
+
+.promo__links a {
+    display: block;
+    border: 2px solid var(--color-nero);
+    border-radius: 66px;
+    padding: 13px 49px 13.5px;
+    /* padding-bottom: 13.5px; */
+    font-family: var(--ff-golos);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+
+    @media (max-width: 1023px) {
+        width: 98.7%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding: 12px 0;
+        padding-right: 1px;
+    }
+}
+
+.promo__links a:nth-child(n):hover {
+    border-color: var(--color-kournikova);
+    background-color: var(--color-kournikova);
+    color: var(--color-nero);
+}
+
+.promo__links a:nth-child(n),
+.promo__links a:nth-child(2n):hover {
+    background-color: var(--color-nero);
+    color: var(--color-default-white);
+}
+
+.promo__links a:nth-child(2n) {
+    background-color: transparent;
+    color: var(--color-nero);
+
+    @media (max-width: 1023px) {
+        background-color: var(--color-default-white);
+        border-color: var(--color-default-white);
+    }
+}
+

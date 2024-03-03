@@ -1,0 +1,40 @@
+
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Golos";
+    font-display: swap;
+    src: url("../../fonts/golos-text-regular.woff2") format("woff2"), url("../../fonts/golos-text-regular.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Golos";
+    font-display: swap;
+    src: url("../../fonts/golos-text-medium.woff2") format("woff2"), url("../../fonts/golos-text-medium.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Golos";
+    font-display: swap;
+    src: url("../../fonts/golos-text-bold.woff2") format("woff2"), url("../../fonts/golos-text-bold.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Merriweather";
+    font-display: swap;
+    src: url("../../fonts/merriweather-regular.woff2") format("woff2"), url("../../fonts/merriweather-regular.woff") format("woff");
+}
+
+@font-face {
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Merriweather";
+    font-display: swap;
+    src: url("../../fonts/merriweather-bold.woff2") format("woff2"), url("../../fonts/merriweather-bold.woff") format("woff");
+}
