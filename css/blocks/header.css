@@ -9,7 +9,7 @@
 .wrapper-header__bg img {
     position: absolute;
     z-index: -1;
-    object-fit: contain; /*cover*/
+    object-fit: cover; /*cover*/
     width: 100%;
     max-height: 100%;
     top: 0;
