@@ -79,7 +79,6 @@
     border: 2px solid var(--color-nero);
     border-radius: 66px;
     padding: 13px 49px 13.5px;
-    /* padding-bottom: 13.5px; */
     font-family: var(--ff-golos);
     font-weight: 500;
     font-size: 16px;
@@ -89,13 +88,10 @@
     align-self: center;
     transition: opacity 0.3s ease;
     cursor: pointer;
+    z-index: 100;
 
     @media (max-width: 1023px) {
         width: 98.7%;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 18px;
-        padding-bottom: 18px;
         padding: 12px 0;
         padding-right: 1px;
     }
@@ -123,3 +119,11 @@
     }
 }
 
+.test:hover {
+    color:red;
+    z-index: 100000;
+}
+
+.promo__links a {
+    z-index: 100000;
+}

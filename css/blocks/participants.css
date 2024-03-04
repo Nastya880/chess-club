@@ -140,3 +140,9 @@
     line-height: 19.2px;
     cursor: pointer;
 }
+
+.participants__item button:hover {
+    transition: .9s;
+    background-color: var(--color-mariner);
+    color: var(--color-default-white);
+}

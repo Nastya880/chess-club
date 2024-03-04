@@ -10,7 +10,7 @@ let autoSlideInterval;
 let participantWidthPercent = 0;
 
 const updateCounter = () => {
-  firstCounter.textContent = currentIndexSlider++;
+  firstCounter.textContent = currentIndexSlider + 1;
   secondCounter.textContent = qualityParticipantst;
 }
 
