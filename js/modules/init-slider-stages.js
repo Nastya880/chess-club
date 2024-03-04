@@ -8,10 +8,10 @@ let currentIndexSlide = 1;
 
 const showSlides = (n) => {    
   if (n > slidesStages.length) {
-    currentIndexSlide = 1
+    currentIndexSlide = 1;
   }
   if (n < 1) {
-      currentIndexSlide = slidesStages.length
+      currentIndexSlide = slidesStages.length;
   }
 
   slidesStages.forEach((slide, index) => {
@@ -33,7 +33,6 @@ const initSliderStages = () => {
     });
     
     buttonStagesPrev.addEventListener('click', () => {
-      console.info(currentIndexSlide -= 1);
       showSlides(currentIndexSlide -= 1);
     });
 
@@ -41,8 +40,8 @@ const initSliderStages = () => {
       dot.addEventListener('click', () => {
         dot.classList.add('is-active');
         // console.info(index);
-        currentIndexSlide = index + 1;
-        showSlides(currentIndexSlide);
+        // currentIndexSlide = index;
+        // showSlides(currentIndexSlide - 1);
       })
     });
   }

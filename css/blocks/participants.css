@@ -56,7 +56,13 @@
     height: 44px;
     border-radius: 44px;
     cursor: pointer;
+    background-color: var(--color-night-rider);
     /* position: relative; */
+}
+
+.participants__pagination-button:hover {
+    background-color: var(--color-kournikova);
+    transition: .9s;
 }
 
 .participants__list {

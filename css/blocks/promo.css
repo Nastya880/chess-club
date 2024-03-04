@@ -101,12 +101,15 @@
     border-color: var(--color-kournikova);
     background-color: var(--color-kournikova);
     color: var(--color-nero);
+    transition: .9s;
 }
 
 .promo__links a:nth-child(n),
 .promo__links a:nth-child(2n):hover {
     background-color: var(--color-nero);
     color: var(--color-default-white);
+    border-color: var(--color-nero);
+    transition: .9s;
 }
 
 .promo__links a:nth-child(2n) {
@@ -117,13 +120,4 @@
         background-color: var(--color-default-white);
         border-color: var(--color-default-white);
     }
-}
-
-.test:hover {
-    color:red;
-    z-index: 100000;
-}
-
-.promo__links a {
-    z-index: 100000;
 }

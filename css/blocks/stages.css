@@ -52,6 +52,8 @@
     @media (max-width: 1023px) {
         display: flex;
         overflow-x: hidden;
+        height: 300px;
+        width: 100%;
     }
 }
 
@@ -74,6 +76,15 @@
     padding: 20px;
     align-items: center;
     /* max-width: 394px; */
+
+    @media (max-width: 1023px) {}
+}
+
+.stages__list-part li,
+.stages__list-part  {
+    @media (max-width: 1023px) {
+        height: 90%;
+    }
 }
 
 .stages__item div {
@@ -162,16 +173,6 @@
     }
 }
 
-
-.stages__navigation-prev {
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.stages__navigation-next {
-    cursor: pointer;
-}
-
 .stages__navigation-dot {
     cursor: pointer;
     width: 10px;
@@ -183,4 +184,31 @@
 
 .stages__navigation-dot.is-active {
     background-color: var(--color-night-rider);
+}
+
+
+.stages__navigation-button {
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--color-night-rider);
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stages__navigation-button--prev {
+    margin-right: 20px;
+}
+
+.stages__navigation-button--next {
+    margin-left: 20px;
+}
+
+.stages__navigation-button:hover {
+    background-color: var(--color-kournikova);
+    transition: .9s;
 }
