@@ -11,6 +11,6 @@
 @import "blocks/promobanner.css";
 @import "blocks/promobanner-lecture.css";
 @import "blocks/promobanner-game.css";
-/* @import "blocks/stages.css"; */
+@import "blocks/stages.css";
 @import "blocks/footer.css";
 

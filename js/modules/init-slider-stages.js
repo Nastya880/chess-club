@@ -1,6 +1,8 @@
 const buttonStagesPrev = document.querySelector('[data-button-stages-prev]');
 const buttonStagesNext = document.querySelector('[data-button-stages-next]');
 const slidesStages = document.querySelectorAll('[data-slide="stages"]');
+const sliderStagesDot = document.querySelectorAll('[data-slider-stages-dot]');
+const listStages = document.querySelector('.stages__list');
 const tabletScreenSize = 1023;
 let currentIndexSlide = 1;
 
@@ -12,12 +14,14 @@ const showSlides = (n) => {
       currentIndexSlide = slidesStages.length
   }
 
-  slidesStages.forEach((slide) => {
+  slidesStages.forEach((slide, index) => {
     slide.classList.remove('is-visible');
+    sliderStagesDot[index].classList.remove('is-active');
     slide.classList.add('is-hidden');
   })
 
-  slidesStages[currentIndexSlide - 1].classList.remove('is-hidden');   
+  slidesStages[currentIndexSlide - 1].classList.remove('is-hidden');
+  sliderStagesDot[currentIndexSlide - 1].classList.add('is-active');
   slidesStages[currentIndexSlide - 1].classList.add('is-visible');    
 };
 
@@ -29,12 +33,21 @@ const initSliderStages = () => {
     });
     
     buttonStagesPrev.addEventListener('click', () => {
+      console.info(currentIndexSlide -= 1);
       showSlides(currentIndexSlide -= 1);
+    });
+
+    sliderStagesDot.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        dot.classList.add('is-active');
+        // console.info(index);
+        currentIndexSlide = index + 1;
+        showSlides(currentIndexSlide);
+      })
     });
   }
 };
 
-// alert(window.innerWidth)
 if (window.innerWidth < tabletScreenSize) {
   initSliderStages();
 }
@@ -42,14 +55,13 @@ if (window.innerWidth < tabletScreenSize) {
 window.addEventListener('resize', () => {
   console.info(window.innerWidth);
   if (window.innerWidth < tabletScreenSize) {
-    document.querySelectorAll('.stages__item').forEach((slide), () => {
-      slide.dataset.dataSlide = 'stages';
-    });
+    listStages.classList.remove('is-no-clider');
     initSliderStages();
   } else if (window.innerWidth >= tabletScreenSize) {
     slidesStages.forEach((slide) => {
-      slide.dataset.dataSlide = '';
-      // slide.classList.add('is-hidden');
-    })
+      slide.classList.remove('is-hidden');
+      slide.classList.add('is-visible');
+    });
+    listStages.classList.add('is-no-clider');
   }
 });
