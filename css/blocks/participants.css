@@ -1,0 +1,142 @@
+.participants {
+    padding: 33px 72px;
+    /* overflow-x: hidden; */
+    position: relative;
+
+    @media (max-width: 1023px) {
+        padding: 40px 20px;
+        padding-bottom: 100px;
+    }
+}
+
+.participants__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.participants__title h2 {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 64.8px;
+    text-transform: uppercase;
+    color: var(--color-night-rider);
+
+    @media (max-width: 1023px) {
+        font-size: 36px;
+        line-height: 39.6px;
+    }
+}
+
+.participants__pagination {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+
+    @media (max-width: 1023px) {
+        position: absolute;
+        bottom: 0px;
+        right: 45%;
+    }
+}
+
+.participants__pagination span {
+    font-family: "Golos";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: var(--color-night-rider);
+}
+
+.participants__pagination-button {
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+.participants__list {
+    display: flex;
+    transition: all 1s;
+}
+
+.participants__list-wrapper {
+    overflow-x: hidden;
+}
+
+.participants__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-right: 40px; */
+    flex: 1 0 33%;
+
+    @media (max-width: 1023px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1 0 50%;
+    }
+
+    @media (max-width: 767px) {
+        flex: 1 0 100%;
+    }
+}
+
+.participants__item picture {
+    max-width: 293px;
+    border-radius: 195.56px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.participants__item img {
+    max-width: 320px;
+
+    @media (max-width: 1023px) {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.participants__item h3 {
+    font-family: "Golos";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-bottom: 6px;
+    text-align: center;
+
+    @media (max-width: 1023px) {
+        font-size: 20px;
+    }
+}
+
+.participants__item p {
+    text-align: center;
+    font-family: "Golos";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--color-night-rider);
+    margin-bottom: 20px;
+}
+
+.participants__item button {
+    display: block;
+    background-color: transparent;
+    border: 1px solid var(--color-mariner);
+    margin: 0 auto;
+    border-radius: 62px;
+    padding: 12px;
+    color: var(--color-mariner);
+    font-family: "Golos";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;
+    cursor: pointer;
+}

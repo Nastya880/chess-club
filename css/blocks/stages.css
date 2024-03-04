@@ -69,6 +69,7 @@
 .stages__item--bg,
 .stages__list-part li {
     display: flex;
+    background: url("../../img/content/bg-stages.png");
     background-color: var(--color-spring-wood);
     padding: 20px;
     align-items: center;
