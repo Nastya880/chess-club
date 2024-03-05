@@ -1,15 +1,18 @@
 .stages {
-    padding: 118px 72px;
+    padding: 118px 72px 80px;
 
     @media (max-width: 1023px) {
-        padding-left: 20px;
-        padding-top: 19.7px;
-        padding-right: 20px;
+        padding: 69px 20px 118px 20px;
+
     }
 }
 
 .stages__title {
     width: 806px;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
 }
 
 .stages h2 {
@@ -22,9 +25,10 @@
     display: inline;
 
     @media (max-width: 1023px) {
-        display: block;
+        /* display: block; */
         font-size: 36px;
         line-height: 39.6px;
+        margin: 0;
     }
 }
 
@@ -39,7 +43,9 @@
     margin-left: 15px;
 
     @media (max-width: 1023px) {
-        display: block;
+        margin: 0;
+        margin-top: 13px;
+        width: 100%;
         font-size: 18px;
         line-height: 21.6px;
     }
@@ -50,17 +56,16 @@
     margin-top: 54px;
     list-style: none;
     display: grid;
-    /* grid-template-areas: "first first second" "third third second" "fourth fifth fifth"; */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(3, auto);
     gap: 20px;
-    /* width: 100%; */
 
     @media (max-width: 1023px) {
         display: flex;
         overflow-x: hidden;
-        height: 300px;
-        width: 100%;
+        margin-top: 147px;
+        /* height: 300px; */
+        /* width: 100%; */
     }
 }
 
@@ -69,9 +74,10 @@
     font-weight: 500;
 }
 
-.stages__item li {
+.stages__item {
     @media (max-width: 1023px) {
-        width: 100%;
+        height: 300px;
+        background: url("../../img/content/bg-stages.png");
     }
 }
 
@@ -88,15 +94,18 @@
     /* max-width: 394px; */
     /* max-height: 112px; */
 
-    @media (max-width: 1023px) {}
+    @media (max-width: 1023px) {
+        width: 100%;
+        align-items: space-around;
+    }
 }
 
-.stages__list-part li,
+/* .stages__list-part li,
 .stages__list-part  {
     @media (max-width: 1023px) {
         height: 90%;
     }
-}
+} */
 
 .stages__item div {
     font-family: "Golos";
@@ -185,6 +194,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 30px;
+        margin-bottom: -38px;
     }
 }
 
@@ -231,3 +242,8 @@
     background-color: var(--color-light-grey);
     pointer-events: none;
 }
+
+/* .stages__item {
+    max-height: 300px;
+    min-height: 300px;
+} */
