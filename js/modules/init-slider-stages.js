@@ -39,9 +39,7 @@ const initSliderStages = () => {
     sliderStagesDot.forEach((dot, index) => {
       dot.addEventListener('click', () => {
         dot.classList.add('is-active');
-        // console.info(index);
-        // currentIndexSlide = index;
-        // showSlides(currentIndexSlide - 1);
+        showSlides(currentIndexSlide = index + 1);
       })
     });
   }
