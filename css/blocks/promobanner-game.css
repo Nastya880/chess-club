@@ -13,10 +13,10 @@
 }
 
 .promobanner__game img {
-    width: auto;
-    height: auto;
-    /* width: 474px;
-    height: 527px; */
+    /* width: auto;
+    height: auto; */
+    width: 474px;
+    height: 527px;
     align-self: center;
 
     @media (max-width: 1023px) {

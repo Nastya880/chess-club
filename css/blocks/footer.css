@@ -4,7 +4,7 @@
 }
 
 .footer__wrapper {
-    padding: 80px 72px;
+    padding: 41px 72px 70px 72px;
 
     @media (max-width: 1023px) {
         padding: 52px 19px;

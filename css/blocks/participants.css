@@ -1,5 +1,5 @@
 .participants {
-    padding: 33px 72px;
+    padding: 82px 72px 137px;
     /* overflow-x: hidden; */
     position: relative;
 
@@ -32,8 +32,9 @@
 
 .participants__pagination {
     display: flex;
+    /* grid-template-columns: auto 20px auto; */
     align-items: center;
-    column-gap: 14px;
+    /* column-gap: 14px; */
 
     @media (max-width: 1023px) {
         position: absolute;
@@ -43,11 +44,13 @@
 }
 
 .participants__pagination span {
+    /* display: block; */
     font-family: "Golos";
     font-weight: 400;
     font-size: 16px;
     line-height: 19.2px;
     color: var(--color-night-rider);
+    margin-right: 10px;
 }
 
 .participants__pagination-button {
@@ -58,6 +61,14 @@
     cursor: pointer;
     background-color: var(--color-night-rider);
     /* position: relative; */
+}
+
+.participants__pagination-button--left {
+    margin-right: 15px;
+}
+
+.participants__pagination-button--right {
+    margin-left: 5px;
 }
 
 .participants__pagination-button:hover {
@@ -97,7 +108,7 @@
     max-width: 293px;
     border-radius: 195.56px;
     overflow: hidden;
-    margin-bottom: 22px;
+    margin-bottom: 26px;
 }
 
 .participants__item img {
@@ -138,7 +149,7 @@
     border: 1px solid var(--color-mariner);
     margin: 0 auto;
     border-radius: 62px;
-    padding: 12px;
+    padding: 8px 12px 7px;
     color: var(--color-mariner);
     font-family: "Golos";
     font-weight: 500;

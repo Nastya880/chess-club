@@ -1,11 +1,15 @@
 .stages {
-    padding: 33px 72px;
+    padding: 118px 72px;
 
     @media (max-width: 1023px) {
         padding-left: 20px;
         padding-top: 19.7px;
         padding-right: 20px;
     }
+}
+
+.stages__title {
+    width: 806px;
 }
 
 .stages h2 {
@@ -30,7 +34,9 @@
     font-size: 20px;
     line-height: 24px;
     color: var(--color-mariner);
-    display: inline;
+    display: inline-block;
+    max-width: 280px;
+    margin-left: 15px;
 
     @media (max-width: 1023px) {
         display: block;
@@ -46,6 +52,7 @@
     display: grid;
     /* grid-template-areas: "first first second" "third third second" "fourth fifth fifth"; */
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
     /* width: 100%; */
 
@@ -73,9 +80,13 @@
     display: flex;
     background: url("../../img/content/bg-stages.png");
     background-color: var(--color-spring-wood);
-    padding: 20px;
-    align-items: center;
+    /* padding: 15px; */
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* align-items: center; */
     /* max-width: 394px; */
+    /* max-height: 112px; */
 
     @media (max-width: 1023px) {}
 }
@@ -98,12 +109,12 @@
     max-height: 36px;
     background-color: var(--color-default-white);
     border-radius: 50%;
+    /* align-self: flex-start; */
 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-right: 16px;
 }
 
 .stages__item.is-hidden {
@@ -144,6 +155,10 @@
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row: 3;
+    margin-left: 5px;
+}
+.stages__item--fifth p {
+    min-width: 50%;
 }
 
 .stages__list-part {

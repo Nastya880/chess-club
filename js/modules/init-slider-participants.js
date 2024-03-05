@@ -27,7 +27,7 @@ const nextParticipants = () => {
 const initAutoSlide = () => {
     autoSlideInterval = setInterval(() => {
         nextParticipants();
-    }, 1000)
+    }, 4000)
 }
 
 const updateSlides = () => {
