@@ -186,7 +186,6 @@
     background-color: var(--color-night-rider);
 }
 
-
 .stages__navigation-button {
     border: none;
     width: 36px;
@@ -211,4 +210,9 @@
 .stages__navigation-button:hover {
     background-color: var(--color-kournikova);
     transition: .9s;
+}
+
+.stages__navigation-button.is-disabled {
+    background-color: var(--color-light-grey);
+    pointer-events: none;
 }
